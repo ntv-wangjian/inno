@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="loader">
+      <UniqueIdentifier>{caebb0a9-1782-4272-a44f-0360a60cc0ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="process">
+      <UniqueIdentifier>{1dea565f-2a1e-45be-8dd7-4d5d67e47fbb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="loader\log.c">
+      <Filter>loader</Filter>
+    </ClCompile>
+    <ClCompile Include="loader\miscs.c">
+      <Filter>loader</Filter>
+    </ClCompile>
+    <ClCompile Include="loader\process.c">
+      <Filter>loader</Filter>
+    </ClCompile>
+    <ClCompile Include="loader\queue.c">
+      <Filter>loader</Filter>
+    </ClCompile>
+    <ClCompile Include="loader\sloader.c">
+      <Filter>loader</Filter>
+    </ClCompile>
+    <ClCompile Include="loader\ntv_prun.c">
+      <Filter>process</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="loader\makefile">
+      <Filter>loader</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="loader\miscs.h">
+      <Filter>loader</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
