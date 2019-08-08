@@ -1,0 +1,100 @@
+{
+  "_from": "onvif",
+  "_id": "onvif@0.6.0",
+  "_inBundle": false,
+  "_integrity": "sha512-VFHuFFIqH7XBB543W5cJCFewoSVsNHGTiA1fuHArvxBAIDvlMY96n69yz5FsgnTqBR62Ilf11ZUEES5PCUCCLg==",
+  "_location": "/onvif",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "onvif",
+    "name": "onvif",
+    "escapedName": "onvif",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/onvif/-/onvif-0.6.0.tgz",
+  "_shasum": "eea7a478e28ee08a6f433f6cb72fb1bd0d2fcf60",
+  "_spec": "onvif",
+  "_where": "C:\\appDEV\\nodejs",
+  "author": {
+    "name": "Andrew D.Laptev",
+    "email": "a.d.laptev@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/agsh/onvif/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Andrew D.Laptev",
+      "email": "a.d.laptev@gmail.com",
+      "url": "https://github.com/agsh/onvif"
+    },
+    {
+      "name": "Chris Wiggins",
+      "email": "chris@wiggins.nz",
+      "url": "https://github.com/chriswiggins"
+    },
+    {
+      "name": "Jeff Galbraith",
+      "email": "jgalbraith@intelliviewtech.com",
+      "url": "http://intelliviewtech.com"
+    }
+  ],
+  "dependencies": {
+    "xml2js": "^0.4.19"
+  },
+  "deprecated": false,
+  "description": "Client to ONVIF NVT devices Profile S: cameras",
+  "devDependencies": {
+    "coffeescript": "^1.9.3",
+    "coveralls": ">=2.11.2",
+    "dot": "^1.0.3",
+    "istanbul": ">=0.3.5",
+    "jscs": "^1.13.1",
+    "jsdoc": "^3.3.0",
+    "jshint": "^2.7.0",
+    "keypress": "^0.2.1",
+    "mocha": ">=2.1.0",
+    "mocha-lcov-reporter": "0.0.1",
+    "nimble": "^0.0.2"
+  },
+  "engines": {
+    "node": ">=6.0"
+  },
+  "homepage": "https://github.com/agsh/onvif#readme",
+  "keywords": [
+    "onvif",
+    "video",
+    "PTZ",
+    "camera",
+    "RTSP"
+  ],
+  "license": "MIT",
+  "main": "lib/onvif.js",
+  "name": "onvif",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agsh/onvif.git"
+  },
+  "scripts": {
+    "coffee-tests": "coffee -c test/*.coffee",
+    "gh-pages": "jsdoc ./lib/*.js --readme ./README.md --destination ./",
+    "jscs": "jscs lib/*.js",
+    "jsdoc": "jsdoc ./lib/*.js --readme ./README.md --destination ./docs",
+    "lint": "jshint lib/*.js",
+    "pretest": "npm run lint && npm run jscs && npm run coffee-tests",
+    "test": "istanbul cover _mocha",
+    "test-coveralls": "istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage",
+    "test-on-travis": "npm run pretest && istanbul cover _mocha --report lcovonly",
+    "upload-to-coveralls": "cat ./coverage/lcov.info | coveralls"
+  },
+  "version": "0.6.0"
+}

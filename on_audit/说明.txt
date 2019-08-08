@@ -1,0 +1,10 @@
+cam.js做了较大修改，修订几个BUG，要替换onvif.rar中的同名文件。
+
+onvif-prober.js 是最终使用的业务文件 
+onvif-audit.js是旧文件，可以对比看到修订内容。
+
+打包命令： 
+pkg -o ntv_probe onvif-prober.js
+
+pkg的安装：
+npm install -g pkg
