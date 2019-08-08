@@ -63,3 +63,5 @@ The npm package called 'pkg' is used to compile the Javascript into a standalone
 # Future Plans
 a) Use the ONVIF Absolute PTZ Position Command to take a snapshot looking in different directions
 
+#BugFixs
+修订原有版本中timeout参数无效的BUG，具体参见代码变更
